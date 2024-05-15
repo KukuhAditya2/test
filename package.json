@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest -i",
+    "start": "nodemon src/index.js"
+  },
+  "author": "Kukuh Aditya",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.7",
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.17",
+    "prisma": "^5.14.0"
+  },
+  "description": ""
+}

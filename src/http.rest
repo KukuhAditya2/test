@@ -1,0 +1,54 @@
+### register
+POST  http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "name": "aditya",
+    "email": "kukuhaditya@gmail.com",
+    "password": "12345678"
+}
+
+### login
+POST  http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "kukuhaditya@gmail.com",
+    "password": "12345678"
+}
+
+
+### create task
+POST http://localhost:3000/api/task
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrdWt1aGFkaXR5YUBnbWFpbC5jb20iLCJpYXQiOjE3MTU3ODE4NzQsImV4cCI6MTcxNTg2ODI3NH0.4LhtEj5Ux6DVJ4y-4urcIHJldunJTcOnElSdIFfoRsg
+
+{
+    "title": "kalkulu",
+    "description": "hahahaha"
+}
+
+
+### get all task
+GET http://localhost:3000/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrdWt1aGFkaXR5YUBnbWFpbC5jb20iLCJpYXQiOjE3MTU3ODE4NzQsImV4cCI6MTcxNTg2ODI3NH0.4LhtEj5Ux6DVJ4y-4urcIHJldunJTcOnElSdIFfoRsg
+
+
+### get by id task
+GET http://localhost:3000/api/task/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrdWt1aGFkaXR5YUBnbWFpbC5jb20iLCJpYXQiOjE3MTU3ODE4NzQsImV4cCI6MTcxNTg2ODI3NH0.4LhtEj5Ux6DVJ4y-4urcIHJldunJTcOnElSdIFfoRsg
+
+
+### update task
+PUT http://localhost:3000/api/task/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrdWt1aGFkaXR5YUBnbWFpbC5jb20iLCJpYXQiOjE3MTU3ODE4NzQsImV4cCI6MTcxNTg2ODI3NH0.4LhtEj5Ux6DVJ4y-4urcIHJldunJTcOnElSdIFfoRsg
+
+{
+    "description": "cinta"
+}
+
+### delete task 
+DELETE http://localhost:3000/api/task/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJrdWt1aGFkaXR5YUBnbWFpbC5jb20iLCJpYXQiOjE3MTU3ODE4NzQsImV4cCI6MTcxNTg2ODI3NH0.4LhtEj5Ux6DVJ4y-4urcIHJldunJTcOnElSdIFfoRsg
